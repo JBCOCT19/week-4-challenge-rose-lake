@@ -1,0 +1,76 @@
+Sample Output:
+
+Welcome to ____'s School System
+Would you like to login? (Y/N)
+y
+Would you like to login as an (A)dmin, (F)aculty, or (S)tudent?
+a
+Welcome Admin
+Please enter in your email: admin1@email.com
+Please enter in your password: password
+
+You logged in!
+
+Options:
+1 = Add Student
+2 - Add Faculty
+3 - Edit Student
+4 - Edit Faculty
+5 - Add Class
+6 - Edit Class
+7 - Enroll Student
+8 - Hire a Faculty
+9 - View All information
+Enter "q" to quit
+>  9
+
+All Students:
+
+Student Id:1
+Student name: Student1
+
+Student Id:2
+Student name: Student2
+
+Student Id:3
+Student name: Student3
+
+All Faculty:
+
+Faculty Id:1
+Faculty name: Faculty1
+
+Faculty Id:2
+Faculty name: Faculty2
+
+Faculty Id:3
+Faculty name: Faculty3
+
+All Classes:
+
+Class Id: 1
+Class name: Java 1
+Class Description: Welcome to Java 1
+
+Class Id: 2
+Class name: Python 1
+Class Description: Welcome to Python 1
+
+Class Id: 3
+Class name: C++ Advanced
+Class Description: Welcome to Advanced C++
+
+Options:
+1 = Add Student
+2 - Add Faculty
+3 - Edit Student
+4 - Edit Faculty
+5 - Add Class
+6 - Edit Class
+7 - Enroll Student
+8 - Hire a Faculty
+9 - View All information
+Enter "q" to quit
+>q
+
+BYE BYE
