@@ -41,13 +41,32 @@ public class Course {
         this.teachers.add(teacher);
     }
 
+    // Displays shorter version of Course information :: NO TEACHER STRING
+    // used after Adding a new Course, since it won't have any teachers yet
+    public String displayShort(){
+        return "\tId: " + id + "\n" +
+                "\tName: " + name + "\n" +
+                "\tDescription: " + description + "\n";
+    }
+
+    // Includes the COURSE key-word...
+    public String displayCourse(){
+        return "\tCourse Id: " + id + "\n" +
+                "\tCourse Name: " + name + "\n" +
+                "\tCourse Description: " + description + "\n" +
+                "\tCourse Teacher(s): "  + teacherString() + "\n";
+    }
+
     // Displays the FULL COURSE INFORMATION
     public String display(){
+        return "\tId: " + id + "\n" +
+                "\tName: " + name + "\n" +
+                "\tDescription: " + description + "\n" +
+                "\tTeacher(s): " + teacherString() + "\n";
+    }
+
+    private String teacherString(){
         String str = "";
-        str += "Course Id: " + id + "\n" +
-                "Course Name: " + name + "\n" +
-                "Course Description: " + description + "\n" +
-                "Teacher(s): ";
         if (teachers.size() != 0) {
             for (int i = 0; i < teachers.size(); i++) {   // loop through teachers
                 str += teachers.get(i).getName();
@@ -58,7 +77,6 @@ public class Course {
         } else {
             str += "No Teacher Assigned";
         }
-        str += "\n"; // place a new line after the teachers line
         return str;
     }
 

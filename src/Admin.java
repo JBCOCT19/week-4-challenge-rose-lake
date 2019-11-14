@@ -14,9 +14,8 @@ public class Admin extends Person {
                 '}';
     }
 
-    @Override
-    public String displayShort() {
-        return "Admin Id: " + id + "\n" +
-                "Admin Name: " + name + "\n";
+    public String displayAdmin() {
+        return "\tAdmin Id: " + id + "\n" +
+                "\tAdmin Name: " + name + "\n";
     }
 }

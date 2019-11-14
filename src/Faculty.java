@@ -1,5 +1,5 @@
 public class Faculty extends Person {
-    public Faculty() {}
+    public Faculty() {super();}
     public Faculty(int id, String name, String email, String password) {
         super(id, name, email, password);
     }
@@ -14,9 +14,8 @@ public class Faculty extends Person {
                 '}';
     }
 
-    @Override
-    public String displayShort() {
-        return "Faculty Id: " + id + "\n" +
-                "Faculty Name: " + name + "\n";
+    public String displayFaculty() {
+        return "\tFaculty Id: " + id + "\n" +
+                "\tFaculty Name: " + name + "\n";
     }
 }

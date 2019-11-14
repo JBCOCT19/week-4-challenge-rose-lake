@@ -13,11 +13,6 @@ abstract class Person {
         this.password = password;
     }
 
-    // this will display the current User in a SHORTENED form
-    // such as after a successful Login or for displaying all [Faculty | Students]
-    // it will be overridden so that it can display specifically to the Person-Type
-    abstract String displayShort();
-
     public String display(){
         return "\tId: " + id + "\n" +
                 "\tName: " + name + "\n" +

@@ -1,5 +1,5 @@
 public class Student extends Person {
-    public Student() {}
+    public Student() {super();}
     public Student(int id, String name, String email, String password) {
         super(id, name, email, password);
     }
@@ -14,10 +14,9 @@ public class Student extends Person {
                 '}';
     }
 
-    @Override
-    public String displayShort() {
-        return "Student Id: " + id + "\n" +
-                "Student Name: " + name + "\n";
+    public String displayStudent() {
+        return "\tStudent Id: " + id + "\n" +
+                "\tStudent Name: " + name + "\n";
     }
 
 }
